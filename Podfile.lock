@@ -1,0 +1,104 @@
+PODS:
+  - AATKit (2.67.0-beta0):
+    - AATKit/Default (= 2.67.0-beta0)
+  - AATKit/AdColony (2.67.0-beta0):
+    - AATKit/Core
+    - AdColony (= 3.3)
+  - AATKit/Admob (2.67.0-beta0):
+    - AATKit/GoogleMobileAds
+  - AATKit/AdX (2.67.0-beta0):
+    - AATKit/GoogleMobileAds
+  - AATKit/Amazon (2.67.0-beta0):
+    - AATKit/Core
+    - AmazonAd (= 2.2.15.1)
+  - AATKit/Applovin (2.67.0-beta0):
+    - AATKit/Core
+    - AppLovinSDK (= 4.8.4)
+  - AATKit/Core (2.67.0-beta0)
+  - AATKit/Default (2.67.0-beta0):
+    - AATKit/AdColony
+    - AATKit/Admob
+    - AATKit/AdX
+    - AATKit/Amazon
+    - AATKit/Applovin
+    - AATKit/DFP
+    - AATKit/Facebook
+    - AATKit/Flurry
+    - AATKit/Inmobi
+    - AATKit/Inneractive
+    - AATKit/Mopub
+    - AATKit/OneByAol
+    - AATKit/Permodo
+    - AATKit/Revmob
+    - AATKit/Smaato
+    - AATKit/SmartAdServer
+    - AATKit/Unity
+    - AATKit/Vungle
+  - AATKit/DFP (2.67.0-beta0):
+    - AATKit/GoogleMobileAds
+  - AATKit/Facebook (2.67.0-beta0):
+    - AATKit/Core
+    - FBAudienceNetwork (~> 4.14)
+  - AATKit/Flurry (2.67.0-beta0):
+    - AATKit/Core
+    - Flurry-iOS-SDK/FlurryAds
+    - Flurry-iOS-SDK/FlurrySDK (= 8.4.0)
+  - AATKit/GoogleMobileAds (2.67.0-beta0):
+    - AATKit/Core
+    - Google-Mobile-Ads-SDK (= 7.30.0)
+  - AATKit/Inmobi (2.67.0-beta0):
+    - AATKit/Core
+  - AATKit/Inneractive (2.67.0-beta0):
+    - AATKit/Core
+    - FyberMediationInneractive (= 6.4.4.5)
+  - AATKit/Mopub (2.67.0-beta0):
+    - AATKit/Core
+  - AATKit/OneByAol (2.67.0-beta0):
+    - AATKit/Core
+  - AATKit/Permodo (2.67.0-beta0):
+    - AATKit/Core
+  - AATKit/Revmob (2.67.0-beta0):
+    - AATKit/Core
+  - AATKit/Smaato (2.67.0-beta0):
+    - AATKit/Core
+  - AATKit/SmartAdServer (2.67.0-beta0):
+    - AATKit/Core
+    - SmartAdServer-DisplaySDK (= 6.8)
+  - AATKit/Unity (2.67.0-beta0):
+    - AATKit/Core
+  - AATKit/Vungle (2.67.0-beta0):
+    - AATKit/Core
+    - VungleSDK-iOS (= 5.4.0)
+  - AdColony (3.3.0)
+  - AmazonAd (2.2.15.1)
+  - AppLovinSDK (4.8.4)
+  - FBAudienceNetwork (4.28.0)
+  - Flurry-iOS-SDK/FlurryAds (8.4.0):
+    - Flurry-iOS-SDK/FlurrySDK
+  - Flurry-iOS-SDK/FlurrySDK (8.4.0)
+  - FyberMediationInneractive (6.4.4.5):
+    - FyberSDK (~> 8.4)
+  - FyberSDK (8.20.3)
+  - Google-Mobile-Ads-SDK (7.30.0)
+  - SmartAdServer-DisplaySDK (6.8)
+  - VungleSDK-iOS (5.4.0)
+
+DEPENDENCIES:
+  - AATKit (= 2.67.0-beta0)
+
+SPEC CHECKSUMS:
+  AATKit: 48d8a7c4d06067799d173b4481fe26849eb6cde7
+  AdColony: c738aa4305856bf324cc48339ea319f3afdb913c
+  AmazonAd: 9b7226322bc124343d279a98c28cdae26c48a0e7
+  AppLovinSDK: 4957a3b227e0ea15a37cd26da7c47cd9d95ab6c2
+  FBAudienceNetwork: 25decde0ee5bfee9573d1d729ace66a66827de41
+  Flurry-iOS-SDK: 0c4488af4e4289e2678f81755d3e9c204c0e8bba
+  FyberMediationInneractive: 518d2fe55448a792b859b78c5c3b28c9784852b6
+  FyberSDK: 2677bccb5965b8290f6225b67a0c025979b2d721
+  Google-Mobile-Ads-SDK: 7404f68120ae8682afeb5af001fbf4aad731c78e
+  SmartAdServer-DisplaySDK: 58bf1bd7c36be13d802ddefbab34ff956ff4da41
+  VungleSDK-iOS: bf5bb77eedc065e28c34d8613b027ef9cc3053c2
+
+PODFILE CHECKSUM: 10503e628034cb9381b25e8799e562e90260aef6
+
+COCOAPODS: 1.4.0

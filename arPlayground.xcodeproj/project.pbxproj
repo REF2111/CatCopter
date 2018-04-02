@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635DA42A143FD75EAA68C1C4 /* Pods_arPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D521C3B53008202FD68F1C /* Pods_arPlayground.framework */; };
+		644E3050206FB968002370E7 /* Drone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E304F206FB968002370E7 /* Drone.swift */; };
+		644E3055207020C8002370E7 /* Meow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 644E3054207020C8002370E7 /* Meow.mp3 */; };
 		64CEBC6E206FB23E0034D794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEBC6D206FB23E0034D794 /* AppDelegate.swift */; };
 		64CEBC70206FB23E0034D794 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CEBC6F206FB23E0034D794 /* art.scnassets */; };
 		64CEBC72206FB23E0034D794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEBC71206FB23E0034D794 /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D521C3B53008202FD68F1C /* Pods_arPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		644E304F206FB968002370E7 /* Drone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drone.swift; sourceTree = "<group>"; };
+		644E3054207020C8002370E7 /* Meow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Meow.mp3; sourceTree = "<group>"; };
+		644E305D207145D2002370E7 /* arPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "arPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
 		64CEBC6A206FB23E0034D794 /* arPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CEBC6D206FB23E0034D794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CEBC6F206FB23E0034D794 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		64CEBC76206FB23F0034D794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64CEBC79206FB23F0034D794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64CEBC7B206FB23F0034D794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD4908E937D124AAAA1433F /* Pods-arPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-arPlayground/Pods-arPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		B27801A6A7468BC83DEB828E /* Pods-arPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-arPlayground/Pods-arPlayground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635DA42A143FD75EAA68C1C4 /* Pods_arPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49D3C5325FF1F220590921FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09D521C3B53008202FD68F1C /* Pods_arPlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		644E305120701EED002370E7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				644E3054207020C8002370E7 /* Meow.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		64CEBC61206FB23E0034D794 = {
 			isa = PBXGroup;
 			children = (
 				64CEBC6C206FB23E0034D794 /* arPlayground */,
 				64CEBC6B206FB23E0034D794 /* Products */,
+				C282AE09ABE4C55C90300D14 /* Pods */,
+				49D3C5325FF1F220590921FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,27 @@
 		64CEBC6C206FB23E0034D794 /* arPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				644E305120701EED002370E7 /* Sounds */,
 				64CEBC6D206FB23E0034D794 /* AppDelegate.swift */,
+				644E304F206FB968002370E7 /* Drone.swift */,
 				64CEBC6F206FB23E0034D794 /* art.scnassets */,
 				64CEBC71206FB23E0034D794 /* ViewController.swift */,
 				64CEBC73206FB23E0034D794 /* Main.storyboard */,
 				64CEBC76206FB23F0034D794 /* Assets.xcassets */,
 				64CEBC78206FB23F0034D794 /* LaunchScreen.storyboard */,
 				64CEBC7B206FB23F0034D794 /* Info.plist */,
+				644E305D207145D2002370E7 /* arPlayground-Bridging-Header.h */,
 			);
 			path = arPlayground;
+			sourceTree = "<group>";
+		};
+		C282AE09ABE4C55C90300D14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BD4908E937D124AAAA1433F /* Pods-arPlayground.debug.xcconfig */,
+				B27801A6A7468BC83DEB828E /* Pods-arPlayground.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64CEBC7E206FB23F0034D794 /* Build configuration list for PBXNativeTarget "arPlayground" */;
 			buildPhases = (
+				5E2AD51527C9E37E45B4F5CF /* [CP] Check Pods Manifest.lock */,
 				64CEBC66206FB23E0034D794 /* Sources */,
 				64CEBC67206FB23E0034D794 /* Frameworks */,
 				64CEBC68206FB23E0034D794 /* Resources */,
+				A2DD51452090D8F5548DC8DB /* [CP] Embed Pods Frameworks */,
+				025DE07D7A33C80926505CB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +142,7 @@
 				TargetAttributes = {
 					64CEBC69206FB23E0034D794 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -127,6 +171,7 @@
 			files = (
 				64CEBC70206FB23E0034D794 /* art.scnassets in Resources */,
 				64CEBC7A206FB23F0034D794 /* LaunchScreen.storyboard in Resources */,
+				644E3055207020C8002370E7 /* Meow.mp3 in Resources */,
 				64CEBC77206FB23F0034D794 /* Assets.xcassets in Resources */,
 				64CEBC75206FB23E0034D794 /* Main.storyboard in Resources */,
 			);
@@ -134,11 +179,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		025DE07D7A33C80926505CB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-arPlayground/Pods-arPlayground-resources.sh",
+				"${PODS_ROOT}/AATKit/aat/AATKit.bundle",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPCloseBtn.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPCloseBtn@2x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPCloseBtn@3x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPCloseButtonX.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPCloseButtonX@2x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPCloseButtonX@3x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPCountdownTimer.html",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPDAAIcon.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPDAAIcon@2x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPDAAIcon@3x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPMutedBtn.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPMutedBtn@2x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPMutedBtn@3x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPPlayBtn.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPPlayBtn@2x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPPlayBtn@3x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPUnmutedBtn.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPUnmutedBtn@2x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MPUnmutedBtn@3x.png",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Resources/MRAID.bundle",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/MoPub_4.20.1/Internal/Common/MPAdBrowserController.xib",
+				"${PODS_ROOT}/AATKit/aat/subSDKs/Permodo_2.13.1.7/MADSDKResources.bundle",
+				"${PODS_ROOT}/FyberMediationInneractive/Fyber_Inneractive_6.4.4-r5/Fyber_Inneractive_6.4.4-r5.embeddedframework/Resources/InneractiveSDKResources.bundle",
+				"${PODS_ROOT}/FyberSDK/Fyber_iOS_SDK_v.8.20.3/fyber-sdk-lib/Resources/FYBBackIcon@2x.png",
+				"${PODS_ROOT}/FyberSDK/Fyber_iOS_SDK_v.8.20.3/fyber-sdk-lib/Resources/FYBIntegrationAnalyzerViewController.xib",
+				"${PODS_ROOT}/FyberSDK/Fyber_iOS_SDK_v.8.20.3/fyber-sdk-lib/Resources/StartedBundleIcon.png",
+				"${PODS_ROOT}/FyberSDK/Fyber_iOS_SDK_v.8.20.3/fyber-sdk-lib/Resources/UnstartedBundleIcon.png",
+				"${PODS_ROOT}/SmartAdServer-DisplaySDK/sdk/sas.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AATKit.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCountdownTimer.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRAID.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdBrowserController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MADSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InneractiveSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FYBBackIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FYBIntegrationAnalyzerViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StartedBundleIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UnstartedBundleIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sas.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-arPlayground/Pods-arPlayground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E2AD51527C9E37E45B4F5CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-arPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2DD51452090D8F5548DC8DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-arPlayground/Pods-arPlayground-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-arPlayground/Pods-arPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64CEBC66206FB23E0034D794 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644E3050206FB968002370E7 /* Drone.swift in Sources */,
 				64CEBC72206FB23E0034D794 /* ViewController.swift in Sources */,
 				64CEBC6E206FB23E0034D794 /* AppDelegate.swift in Sources */,
 			);
@@ -282,8 +441,10 @@
 		};
 		64CEBC7F206FB23F0034D794 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD4908E937D124AAAA1433F /* Pods-arPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S99BC7EKEX;
 				INFOPLIST_FILE = arPlayground/Info.plist;
@@ -293,6 +454,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.arPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "arPlayground/arPlayground-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +463,10 @@
 		};
 		64CEBC80206FB23F0034D794 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B27801A6A7468BC83DEB828E /* Pods-arPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S99BC7EKEX;
 				INFOPLIST_FILE = arPlayground/Info.plist;
@@ -311,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.arPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "arPlayground/arPlayground-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
