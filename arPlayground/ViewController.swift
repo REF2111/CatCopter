@@ -25,9 +25,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, AATKitDelegate {
     @IBOutlet weak var buttonTurnRight: UIButton!
     
     let kMovingLengthPerLoop: CGFloat = 0.03
-    let kAnimationDurationMoving = 0.05
+    let kAnimationDurationMoving = 0.75
     let kRotationRadianPerLoop: CGFloat = 0.05
-    //var speed : CGFloat = 0.05
     
     @IBOutlet weak var bannerView: UIView!
     var loadedBanner = UIView()
@@ -168,16 +167,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, AATKitDelegate {
     
     func execute(action: SCNAction, sender: UILongPressGestureRecognizer) {
         let loopAction = SCNAction.repeatForever(action)
+        drone.runAction(loopAction)
         if (sender.state == .began) {
             playSound()
-            drone.runAction(loopAction)
         } else if (sender.state == .ended) {
             drone.removeAllActions()
         }
     }
     
     func moveDrone(x: CGFloat, z: CGFloat, sender: UILongPressGestureRecognizer) {
-        
         let action = SCNAction.moveBy(x: x, y: 0, z: z, duration: kAnimationDurationMoving)
         execute(action: action, sender: sender)
     }
